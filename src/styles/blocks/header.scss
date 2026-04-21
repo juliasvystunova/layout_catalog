@@ -46,21 +46,6 @@
       font-size: $header-font-size;
       transition: color $transition-time;
 
-      &.is-active {
-        color: $selected-color;
-
-        &::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          height: 4px;
-          width: 100%;
-          background-color: $selected-color;
-          border-radius: 8px;
-        }
-      }
-
       &:hover {
         color: $selected-color;
       }
@@ -90,3 +75,19 @@
     }
   }
 }
+
+.is-active {
+  color: $selected-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $selected-color;
+    border-radius: 8px;
+  }
+}
+

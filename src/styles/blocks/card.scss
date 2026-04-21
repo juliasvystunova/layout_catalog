@@ -6,11 +6,12 @@
   border: 1px solid $border-color;
   border-radius: 5px;
 
-  transition-duration: $transition-time;
+  transition-duration: transform $transition-time;
 
   &:hover {
     transform: scale(1.2);
     transform-origin: center;
+    z-index: 1;
   }
 
   &__image {
